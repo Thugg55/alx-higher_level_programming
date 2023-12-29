@@ -4,7 +4,7 @@
 
 if __name__ == "__main__":
     """print the results of some maths performed on imported functions"""
-    from calculator_1 import *
+    from calculator_1 import add, sub, mul, div
 
     a = 10
     b = 5
