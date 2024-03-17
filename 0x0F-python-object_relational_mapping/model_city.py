@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+"""MOdule documentation for city Class definition"""
 
-from sqlalchemy import Column, Foreignkey, Integer, String
+from model_state import Base
+from sqlalchemy import Column, ForeignKey, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
@@ -17,4 +19,4 @@ class City(Base):
     __tablename__ = "cities"
     id = Column(Integer, primary_key=True)
     name = Column(String(128), nullable=False)
-    state_id = Column(Integer, Foreignkey("states.id"), nullable=False)
+    state_id = Column(Integer, ForeignKey("states.id"), nullable=False)
