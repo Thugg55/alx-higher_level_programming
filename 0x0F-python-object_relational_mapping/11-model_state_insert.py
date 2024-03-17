@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""script that adds the State object “Louisiana” to the database hbtn_0e_6_usa:"""
+"""script that adds the State object “Louisiana” 
+to the database hbtn_0e_6_usa:"""
 
 import sys
 from sqlalchemy import create_engine
@@ -14,7 +15,6 @@ if __name__ == "__main__":
     # create Session
     Session = sessionmaker(bind=engine)
     session = Session()
-
     newState  = State(name="Louisiana")
     session.add(newState)
     session.commit()
