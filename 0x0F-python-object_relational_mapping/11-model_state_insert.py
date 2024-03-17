@@ -2,8 +2,8 @@
 """script that adds the State object “Louisiana” to the database hbtn_0e_6_usa:"""
 
 import sys
-from sqlalchmey import create_engine
-from sqlsalchemy.orm import sessionmaker
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
 from model_state import State, Base
 
 if __name__ == "__main__":
