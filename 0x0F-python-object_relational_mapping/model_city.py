@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""MOdule documentation for city Class definition"""
+"""documentation for city Class """
 
 from model_state import Base
 from sqlalchemy import Column, ForeignKey, Integer, String
