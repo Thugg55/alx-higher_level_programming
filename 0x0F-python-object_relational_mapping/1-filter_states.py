@@ -2,7 +2,7 @@
 """Script list all states with a name starting with N from the database
 """
 
-import MYSQLdb
+import MySQLdb
 import sys
 
 if __name__ == "__main__":
