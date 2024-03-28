@@ -1,3 +1,3 @@
-#!/usr/bin/python3
-# Script to send request to a URL and output size of the body of the response
+#!/bin/bash
+# Script to send request to a URL and displays size of the body
 curl -sI "$1" | grep Content-Length | cut -d ' ' -f2
