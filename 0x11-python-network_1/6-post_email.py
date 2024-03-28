@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-"""Script takes in a URL and an email address, sends a POST request to the URL with 
-the email as parameter, and finally displays the body of the response"""
+"""Script takes in a URL and an email address, sends a POST request to the
+URL with the email as parameter, and finally displays the body of the
+response"""
 
 import requests
 import sys
