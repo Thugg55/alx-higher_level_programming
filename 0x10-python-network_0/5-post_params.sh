@@ -1,13 +1,3 @@
 #!/bin/bash
-# Check if URL argument is provided
-if [ $# -ne 1 ]; then
-    echo "Usage: $0 <URL>"
-    exit 1
-fi
-url=$1
-email="test@gmail.com"
-subject="I will always be here for PLD"
-# Send POST request with specific parameters and display the response body
-response=$(curl -s -X POST "$url" -d "email=$email" -d "subject=$subject")
-echo "$response"
-
+# Script sends a post request to the passed URL.
+curl -s -X POST -d "email=test@gmail.com&subject=I will always be here for PLD" "$1"
